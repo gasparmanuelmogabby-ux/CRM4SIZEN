@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlowCRM</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+
+        .topo {
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+
+        .topo h1 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .topo p {
+            margin: 5px 0 0;
+            color: #cbd5e1;
+        }
+
+        .conteudo {
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .card {
+            background: white;
+            padding: 18px;
+            border-radius: 14px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .numero {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .menu {
+            margin-top: 20px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .botao {
+            width: 100%;
+            padding: 15px;
+            border: 0;
+            border-radius: 10px;
+            background: white;
+            text-align: left;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .botao:active {
+            background: #dbeafe;
+        }
+
+        .verde {
+            color: #16a34a;
+        }
+
+        .azul {
+            color: #2563eb;
+        }
+
+        @media (min-width: 700px) {
+            .cards {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topo">
+        <h1>FlowCRM</h1>
+        <p>Gestão de vendas e clientes</p>
+    </div>
+
+    <div class="conteudo">
+
+        <div class="cards">
+
+            <div class="card">
+                <div>Clientes</div>
+                <div class="numero azul">24</div>
+            </div>
+
+            <div class="card">
+                <div>Alta probabilidade</div>
+                <div class="numero verde">8</div>
+            </div>
+
+            <div class="card">
+                <div>Vendas</div>
+                <div class="numero">12</div>
+            </div>
+
+            <div class="card">
+                <div>Entregas hoje</div>
+                <div class="numero">5</div>
+            </div>
+
+        </div>
+
+        <div class="menu">
+
+            <button class="botao">
+                📊 Resumo geral
+            </button>
+
+            <button class="botao">
+                👥 Todos os clientes
+            </button>
+
+            <button class="botao">
+                🔄 Pipeline de vendas
+            </button>
+
+            <button class="botao">
+                💰 Vendas
+            </button>
+
+            <button class="botao">
+                🚚 Entregas agendadas
+            </button>
+
+            <button class="botao">
+                📞 Follow-ups
+            </button>
+
+            <button class="botao">
+                📦 Catálogo de produtos
+            </button>
+
+            <button class="botao">
+                📈 Relatórios
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
